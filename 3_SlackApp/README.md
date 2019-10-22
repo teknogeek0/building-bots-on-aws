@@ -1,14 +1,16 @@
 # Module 3: Create a Slack app
 
-#### Background
+In this step, you will create an application in Slack and make it work with your Serverless Application on AWS. Amazon API Gateway is a managed API service that you will use to subscribe to events from Slack. AWS Secrets Manager is a service to securely store secrets. The app will use two secrets from Slack: 1) the signing secret that enables the app to verify authenticity of events received from Slack and 2) the Bot Token that enables the app to post messages to Slack.
 
-You will create an application in Slack and make it work with your Serverless Application on AWS. Amazon API Gateway is a managed API service that you will use to subscribe to events from Slack. AWS Secrets Manager is a service to securely store secrets. The app will use two secrets from Slack: 1) the signing secret that enables the app to verify authenticity of events received from Slack and 2) the Bot Token that enables the app to post messages to Slack.
+## Implementation Instructions
+Each of the following sections provides an implementation overview and detailed, step-by-step instructions. The overview should provide enough context for you to complete the implementation if you're already familiar with the AWS Management Console or you want to explore the services yourself without following a walkthrough.
 
-#### High-level instructions
+
+### 1. Create a Slack app
 
 Create a Slack application and set up the necessary permissions and bot user. Copy the signing secret to AWS Secrets Manager. Install the app to your workspace and copy the bot token to AWS Secrets Manager. Copy the API Gateway endpoint from Lambda and use it to subscribe to Slack events - once you paste it, it should be automatically verified. Choose the events you want to subscribe to and re-install the Slack app to your Slack workspace.
 
-#### Step-by-step directions
+**:white_check_mark: Step-by-step directions**
 
 1. Go to [api.slack.com](https://api.slack.com) and choose **Your apps** in the top right corner.
 1. Choose **Create New App**.
@@ -81,7 +83,11 @@ Create a Slack application and set up the necessary permissions and bot user. Co
 
 ---
 
-### 6. Test!
+### 2. Test!
+
+Send your bot a direct message and an @-mention message in Slack. The bot should echo the message back.
+
+**:white_check_mark: Step-by-step directions**
 
 1. Go to the Slack app and find the bot user you've just added. Send it a message. The bot should echo the message back.
 
