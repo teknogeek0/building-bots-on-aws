@@ -106,5 +106,5 @@ In the Lambda console, create a test event that will guarantee the function to f
 [cleanup]: ../01_Cleanup/
 [serverless-app-setup]: ../1_ServerlessAppSetup/
 [code-management]: ../2_CodeManagement/
-[setup-chatbot]: ../3_ChatBot/
+[setup-slack-app]: ../3_SlackApp/
 [notifications]: ../4_AWSNotifications/
