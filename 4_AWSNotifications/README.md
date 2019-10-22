@@ -1,6 +1,4 @@
-# Module 4: Monitoring the bot with AWS Chatbot
-
-#### Background
+# Module 4: AWS Notifications with AWS Chatbot
 
 AWS Chatbot enables your team to receive AWS notifications in Slack. To enable notifications, you need to configure the Chatbot with a Slack channel and choose SNS topics that will notify the channel. Then you configure other AWS services to publish notifications to SNS topics and AWS Chatbot will format and deliver notifications to Slack. See [Chatbot documentation](https://docs.aws.amazon.com/chatbot/latest/adminguide/related-services.html#related-services.title) for the list of AWS services integrated with AWS Chatbot.
 
@@ -8,11 +6,11 @@ Your application already includes a CloudWatch Alarm preconfigured to send a not
 
 ![Chatbot diagram](../images/chatbot-diagram.png)
 
-#### High-level instructions
+### 1. Configure AWS Chatbot with Slack
 
 Configure AWS Chatbot with your Slack workspace. Use the SNS topic that was created by the application.
 
-#### Step-by-step directions
+**:white_check_mark: Step-by-step directions**
 
 1. Go to AWS Console, choose **Services** in the navigation, and choose **AWS Chatbot** in the list of services.
 1. In **Configure a chat client**, choose **Slack**, and choose **Configure client**.
@@ -34,17 +32,11 @@ Configure AWS Chatbot with your Slack workspace. Use the SNS topic that was crea
 
 ---
 
-### 8. Test AWS Chatbot notifications
+### 2. Test AWS Chatbot notifications
 
-#### Background
+To test the AWS Chatbot notifications, you will cause the Lambda function to fail and trigger a CloudWatch Alarm. In the Lambda console, create a test event that will guarantee the function to fail. Wait until you receive a CloudWatch Alarm in Slack from AWS Chatbot.
 
-To test the AWS Chatbot notifications, you will cause the Lambda function to fail and trigger a CloudWatch Alarm.
-
-#### High-level instructions
-
-In the Lambda console, create a test event that will guarantee the function to fail. Wait until you receive a CloudWatch Alarm in Slack from AWS Chatbot.
-
-#### Step-by-step directions
+**:white_check_mark: Step-by-step directions**
 
 1. Choose **Services** in the navigation and and choose **Lambda**.
 1. Choose **Applications** in the left menu and click on your application name in the list.
@@ -58,7 +50,7 @@ In the Lambda console, create a test event that will guarantee the function to f
     }
     ```
 
-    ![Test event fail](images/lambda-test-event-fail.png)
+    ![Test event fail](../images/lambda-test-event-fail.png)
 
 1. Choose **Test** button again.
 1. The Lambda function will fail and display a failure message.
@@ -71,7 +63,7 @@ In the Lambda console, create a test event that will guarantee the function to f
 
 ### :star: Recap
 
-:wrench: In this module you've configured AWS to send CloudWatch Alarms to your Slack bot.
+:wrench: In this module you've configured AWS to send CloudWatch Alarms to your Slack bot using the AWS Chatbot service.
 
 :star: Congratulations, you have completed the Building Serverless Bots on AWS Workshop!
 
@@ -106,5 +98,5 @@ In the Lambda console, create a test event that will guarantee the function to f
 [cleanup]: ../01_Cleanup/
 [serverless-app-setup]: ../1_ServerlessAppSetup/
 [code-management]: ../2_CodeManagement/
-[setup-chatbot]: ../3_ChatBot/
+[setup-slack-app]: ../3_SlackApp/
 [notifications]: ../4_AWSNotifications/

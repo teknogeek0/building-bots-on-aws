@@ -19,7 +19,7 @@ This workshop is divided into four modules. Each module describes a scenario of 
 | ---------------- | -------------------------------------------------------- |
 | [Serverless App Setup][serverless-app-setup] | Create a new Serverless Application which will support your application and provide CI/CD for it. |
 | [Code Management][code-management] | Set up an IAM user for and then clone locally the CodeCommit repository. |
-| [Chatbot][setup-chatbot] | Setup an AWS Chatbot to connect with Slack. |
+| [Slack App][setup-slack-app] | Create a Slack app to connect with AWS. |
 | [AWS Notifications][notifications] | Connect your chat bot back to AWS to recieve notification of events. |
 
 :warning: These modules are intended to be executed linearly.
@@ -53,5 +53,5 @@ After you have completed the workshop you can delete all of the resources that w
 [cleanup]: 01_Cleanup/
 [serverless-app-setup]: 1_ServerlessAppSetup/
 [code-management]: 2_CodeManagement/
-[setup-chatbot]: 3_ChatBot/
+[setup-slack-app]: 3_SlackApp/
 [notifications]: 4_AWSNotifications/

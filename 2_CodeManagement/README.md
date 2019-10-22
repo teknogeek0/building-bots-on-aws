@@ -96,7 +96,7 @@ Clone the AWS CodeCommit repository, add a remote branch with the slack bot code
 
 ### Next
 
-:white_check_mark: Proceed to the next module, [Chatbot Setup][setup-chatbot], 
+:white_check_mark: Proceed to the next module, [Create a Slack App][setup-slack-app], 
 wherein you'll configure an AWS Chatbot bot to connect to Slack.
 
 ---
@@ -126,5 +126,5 @@ wherein you'll configure an AWS Chatbot bot to connect to Slack.
 [cleanup]: ../01_Cleanup/
 [serverless-app-setup]: ../1_ServerlessAppSetup/
 [code-management]: ../2_CodeManagement/
-[setup-chatbot]: ../3_ChatBot/
+[setup-slack-app]: ../3_SlackApp/
 [notifications]: ../4_AWSNotifications/
