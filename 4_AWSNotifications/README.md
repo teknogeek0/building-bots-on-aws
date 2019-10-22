@@ -50,7 +50,7 @@ To test the AWS Chatbot notifications, you will cause the Lambda function to fai
     }
     ```
 
-    ![Test event fail](images/lambda-test-event-fail.png)
+    ![Test event fail](../images/lambda-test-event-fail.png)
 
 1. Choose **Test** button again.
 1. The Lambda function will fail and display a failure message.
