@@ -93,7 +93,8 @@ Create a Slack application and set up the necessary permissions and bot user. Co
 
 ### :star: Recap
 
-:wrench: You just created an AWS Chatbot bot to connec to your Slack workspace. From here you can easily now build more sophisticated and conversational bots.
+:wrench: You just created a Slack app to connect to your AWS account. From here you can now add business logic and easily build more sophisticated bots.
+
 ### Next
 
 :white_check_mark: Proceed to the next module, [AWS Notifications][notifications], wherein you'll configure AWS to send events to your Slack bot.

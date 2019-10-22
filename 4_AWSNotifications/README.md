@@ -1,4 +1,4 @@
-# Module 4: Monitoring the bot with AWS Chatbot
+# Module 4: AWS Notifications with AWS Chatbot
 
 #### Background
 
