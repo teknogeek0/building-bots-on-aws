@@ -35,7 +35,7 @@ Open the CloudFormationRole IAM role in IAM console and add SNSFullAccess, IAMFu
 
 **:white_check_mark: Step-by-step directions**
 
-1. In the Application page, choose **CloudFormationRole** under the **Infrastructure** section. [IAM Console][iam-console] will open in a new tab.
+1. In the Application page, choose **CloudFormationRole** under the **Infrastructure** section. IAM Console will open in a new tab.
 1. Choose **Attach policies**.
 1. Search for **SNSFullAccess** and select it (but do not attach it yet). Repeat for **IAMFullAccess** and **CloudWatchFullAccess**.
     
